@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import {} from "../css/Navbar.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function Navbar(props) {
   return (
@@ -10,9 +10,12 @@ function Navbar(props) {
         className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
       >
         <div className="container-fluid">
-          <Link className={`navbar-brand bg-${props.mode}`} to="/">
+          {/* <Link className={`navbar-brand bg-${props.mode}`} to="/">
             {props.title}
-          </Link>
+          </Link> */}
+          <a className={`navbar-brand bg-${props.mode}`} href="/">
+            {props.title}
+          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -27,21 +30,35 @@ function Navbar(props) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
               <li className="nav-item">
-                <Link
+                {/* <Link
                   className={`nav-link active bg-${props.mode}`}
                   aria-current="page"
                   to="/"
                 >
                   Home
-                </Link>
+                </Link> */}
+                <a
+                  className={`nav-link active bg-${props.mode}`}
+                  aria-current="page"
+                  href="/"
+                >
+                  Home
+                </a>
               </li>
               <li className="nav-item">
-                <Link
+                {/* <Link
                   className={`nav-link active bg-${props.mode}`}
                   to="/about"
                 >
                   {props.aboutText}
-                </Link>
+                </Link> */}
+
+                <a
+                  className={`nav-link active bg-${props.mode}`}
+                  href="/about"
+                >
+                  {props.aboutText}
+                </a>
               </li>
               {/* <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

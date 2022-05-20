@@ -6,9 +6,9 @@ import Alert from "./components/Alert";
 import React, { useState } from "react";
 
 //using router dom in react
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+// import { HashRouter as Router, Routes, Route } from "react-router-dom";
 //adding about page without loading using router dom
-import About from "./components/About";
+// import About from "./components/About";
 
 function App() {
   const [mode, setMode] = useState("light");
@@ -69,7 +69,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      {/* <Router> */}
         <Navbar
           title="TEXTUTILS"
           mode={mode}
@@ -81,7 +81,7 @@ function App() {
         />
         <Alert alert={alert} />
         <div className="container my-3">
-          <Routes>
+          {/* <Routes>
             <Route
               exact
               path="/"
@@ -92,12 +92,16 @@ function App() {
                   showAlert={showAlert}
                 />
               }
-            />
-
-            <Route exact path="/about" element={<About />} />
-          </Routes>
+            /> */}
+<TextForm
+                  placeholderHeading="Enter your Text to Analyze here"
+                  mode={mode}
+                  showAlert={showAlert}
+                />
+            {/* <Route exact path="/about" element={<About />} />
+          </Routes> */}
         </div>
-      </Router>
+      {/* </Router> */}
     </>
   );
 }
