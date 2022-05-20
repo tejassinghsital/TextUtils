@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.42d975c7.css","mappings":"AAAA,UACE,wBAAyB,CACzB,UACF,CAEA,SACE,wBAAyB,CACzB,UACF","sources":["css/Navbar.css"],"sourcesContent":[".bg-green {\r\n  background-color: #2e7e80;\r\n  color: white;\r\n}\r\n\r\n.bg-blue {\r\n  background-color: #143d6f;\r\n  color: white;\r\n}\r\n"],"names":[],"sourceRoot":""}
